@@ -6,7 +6,7 @@
 
 const http = require('http');
 const debug = require('debug')('cross-env:server');
-const app = require('../app');
+const app = require('../../app');
 
 module.exports = () => {
   /**

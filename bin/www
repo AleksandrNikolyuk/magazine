@@ -1,8 +1,9 @@
+#!/usr/bin/env node
 
-const web = require('../runners/web');
+const webRunner = require('./runners/web');
 
 try {
-  web();
+  webRunner();
 
   console.log(
     '\n\x1b[32m>>>   Ready to work   <<<\x1b[0m\n\n',
