@@ -1,0 +1,13 @@
+
+const web = require('../runners/web');
+
+try {
+  web();
+
+  console.log(
+    '\n\x1b[32m>>>   Ready to work   <<<\x1b[0m\n\n',
+  );
+} catch (err) {
+  console.log(err);
+  process.exit();
+}
