@@ -6,13 +6,19 @@
     "start": "cross-env NODE_PATH=. node ./bin/www"
   },
   "dependencies": {
+    "ajv": "^6.10.0",
+    "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.16.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^7.0.1",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-    "node-sass-middleware": "0.11.0"
+    "nconf": "^0.10.0",
+    "node-sass-middleware": "0.11.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
