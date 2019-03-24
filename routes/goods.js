@@ -11,7 +11,7 @@ const validate = ajv.compile(routeSchema);
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 router.get('/', (req, res) => {
-  res.render('form');
+  res.render('goods');
 });
 
 router.post('/', urlencodedParser, (req, res) => {

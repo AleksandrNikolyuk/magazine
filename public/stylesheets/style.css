@@ -14,13 +14,30 @@ span {
 label {
   font-size: 20px; }
 
+.form {
+  display: flex;
+  flex-direction: column; }
+
+.blogForm {
+  display: flex;
+  flex-direction: column; }
+
 .field {
   width: 350px;
   height: 30px;
+  margin-bottom: 30px;
   font-size: 18px; }
 
-.sendButton {
-  margin-left: 20px;
+.image {
+  margin-bottom: 30px; }
+
+.description {
+  width: 350px;
+  height: 150px;
+  font-size: 18px; }
+
+.button {
+  margin-top: 20px;
   width: 120px;
   height: 35px;
   background: #eee;

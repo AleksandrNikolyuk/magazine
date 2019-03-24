@@ -4,40 +4,11 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
-const UserModel = require('./models/event');
-
-//----------------------------------------
-
-// UserModel.create({ name: 'Alex', surname: 'Nik' }, (err) => {
-//   if (err) console.log(err);
-// });
-
-// UserModel.updateOne({ name: 'Sam', surname: 'Black' }, (err) => {
-//   if (err) console.log(err);
-// });
-
-// UserModel.deleteOne({ name: 'Sam' }, (err) => {
-//   if (err) console.log(err);
-// });
-
-// UserModel.find().then((doc) => {
-//   console.log('!!!!', doc);
-// });
-
-// const User = new UserModel({ name: 'Alexander', surname: 'Nikolyuk' });
-// console.log(`Name of this user ${User.name} and surname ${User.surname}`);
-
-// UserModel.virtual('fullName').get(function () {
-//   return `${this.name}  ${this.surname}`;
-// });
-// console.log(User.fullName);
-
-
-//----------------------------------------
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const formRouter = require('./routes/form');
+const goodRouter = require('./routes/goods');
+const blogRouter = require('./routes/blog');
 
 
 const app = express();
@@ -70,7 +41,8 @@ app.use((req, res, next) => {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/form', formRouter);
+app.use('/goods', goodRouter);
+app.use('/blog', blogRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
